@@ -27,9 +27,7 @@ function calcular (numero1, operador, numero2) {
 
 
 
-if(typeof (numero1) == String|| typeof (numero2) == String){
-    console.log('ERRO')
-} else{
-    console.log(calcular(numero1, operador, numero2))
-process.exit()
+if(typeof (numero1) == 'number'|| typeof (numero2) == 'number'){
+    console.log(calcular(numero1,operador,numero2))
+    process.exit()
 }
