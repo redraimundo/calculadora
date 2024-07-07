@@ -18,6 +18,9 @@ function calcular (numero1, operador, numero2) {
             return numero1 * numero2;
         break
         case '/':
+            return numero1 / numero2;
+        break
+        case '%':
             return (numero1 * numero2) /100;
         break
         default:
@@ -25,9 +28,7 @@ function calcular (numero1, operador, numero2) {
     }
 }
 
-
-
-if(typeof (numero1) == 'number'|| typeof (numero2) == 'number'){
+if(typeof numero1 == 'number'|| typeof numero2 == 'number') {
     console.log(calcular(numero1,operador,numero2))
     process.exit()
 }
